@@ -1,9 +1,6 @@
 .text-center {
   text-align: center;
-}
-
-.bg-red {
-  background: red;
+  font-size: 40px;
 }
 
 .mx-auto {
@@ -13,6 +10,7 @@
 .flex {
   display: flex;
 }
+
 .flex-col {
   flex-direction: column;
 }
