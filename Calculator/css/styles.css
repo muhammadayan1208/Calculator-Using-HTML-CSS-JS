@@ -1,28 +1,79 @@
-html {
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+html,
+body {
   height: 100%;
-  width: 100%;
+  margin: 0;
   font-family: "Roboto", sans-serif;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
 }
 
 .button {
   width: 50px;
   padding: 20px;
   margin: 0 3px;
-  border: 2px solid black;
+  border: 2px solid currentColor;
   border-radius: 9px;
   cursor: pointer;
+  background-color: inherit;
+  color: inherit;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .row {
   margin: 8px 0;
+  display: flex;
 }
 
-.row input {
+.input {
   width: 240px;
   font-size: 20px;
   margin: 0;
-  padding: 10px 0px;
-  border: 2px solid black;
+  padding: 10px;
+  border: 2px solid currentColor;
   border-radius: 5px;
+  text-align: right;
+  background-color: inherit;
+  color: inherit;
+}
+
+.theme-toggle button {
+  padding: 10px 20px;
+  margin-left: 50px;
+  font-size: 12px;
+  border: 2px solid currentColor;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+body.dark-theme .theme-toggle button {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.theme-toggle button:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+body.dark-theme .theme-toggle button:hover {
+  background-color: #444;
+  transform: scale(1.05);
 }
