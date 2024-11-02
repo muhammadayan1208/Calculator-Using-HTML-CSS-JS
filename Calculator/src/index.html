@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A Calculator Made By Me</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Calculator</title>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="../css/utils.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body class="light-theme">
     <h1 class="text-center">Welcome To Calculator</h1>
 
     <div class="theme-toggle">
       <button id="themeSwitcher">Toggle Dark Mode</button>
     </div>
 
-    <div class="container">
+    <div class="container flex flex-col items-center mx-auto">
       <div class="row">
         <input class="input" type="text" readonly />
       </div>
@@ -49,6 +50,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../scripts/script.js"></script>
   </body>
 </html>
